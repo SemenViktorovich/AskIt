@@ -6,7 +6,7 @@ class User < ApplicationRecord
   validate :password_presence
   validate :correct_old_password, on: :update, if: -> { password.present? }
   validates :password, confirmation: true, allow_blank: true,
-    length: {minimum: 8, maximum: 70}
+    length: {minimum: 3, maximum: 70}
   
   validates :email, presence: true, uniqueness: true, 'valid_email_2/email': true
   validate :password_complexity
