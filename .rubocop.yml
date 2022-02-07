@@ -1,0 +1,5 @@
+require: rubocop-rails
+require: rubocop-performance
+
+Style/Documentation:
+  Enabled: false
