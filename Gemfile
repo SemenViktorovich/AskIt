@@ -13,7 +13,7 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 5.0'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '6.0.0.beta.7'
+gem 'webpacker', '6.0.0.rc.2'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
@@ -25,8 +25,12 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'activerecord-import', '~> 1.2'
 gem 'caxlsx', '~> 3.1'
 gem 'caxlsx_rails', '~> 0.6'
+gem 'dotenv-rails', '~> 2.7'
 gem 'draper', '~> 4.0'
+gem 'i18n-tasks', '~> 0.9.34'
+gem 'lokalise_rails', '~> 2'
 gem 'pagy', '~> 4.10'
+gem 'rails-i18n', '~> 6'
 gem 'rubyXL', '~> 3.4'
 gem 'rubyzip', '~> 2'
 gem 'valid_email2', '~> 4.0'
@@ -51,6 +55,7 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'rubocop', '~> 1.18', require: false
+  gem 'rubocop-i18n', '~> 3', require: false
   gem 'rubocop-performance', '~> 1.11', require: false
   gem 'rubocop-rails', '~> 2.11', require: false
 end
