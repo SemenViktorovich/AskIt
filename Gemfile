@@ -11,14 +11,12 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'webpacker', '6.0.0.beta.7'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+# gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -32,6 +30,7 @@ gem 'pagy', '~> 4.10'
 gem 'rubyXL', '~> 3.4'
 gem 'rubyzip', '~> 2'
 gem 'valid_email2', '~> 4.0'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -51,13 +50,10 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
+  gem 'rubocop', '~> 1.18', require: false
+  gem 'rubocop-performance', '~> 1.11', require: false
+  gem 'rubocop-rails', '~> 2.11', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-
-gem 'bootstrap', '~> 4.2.1'
-
-gem 'rubocop-rails', require: false
-
-gem 'rubocop-performance', require: false

@@ -56,7 +56,7 @@ class User < ApplicationRecord
     return if password.blank? || password =~ /(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/
 
     msg = 'complexity requirement not met. Length should be 8-70 characters and ' \
-      'include: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
+          'include: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
     errors.add :password, msg
   end
 
