@@ -4,8 +4,8 @@ require 'lokalise_rails'
 
 LokaliseRails.config do |c|
   # These are mandatory options that you must set before running rake tasks:
-  # c.api_token = ENV['LOKALISE_API_TOKEN']
-  # c.project_id = ENV['LOKALISE_PROJECT_ID']
+  c.api_token = ENV['LOKALISE_API_TOKEN']
+  c.project_id = ENV['LOKALISE_PROJECT_ID']
 
   # Provide a custom path to the directory with your translation files:
   # c.locales_path = "#{Rails.root}/config/locales"
@@ -38,7 +38,8 @@ LokaliseRails.config do |c|
   # Additional export options (only filename, contents, and lang_iso params are provided by default)
   # c.export_opts = {}
 
-  # Provide additional file exclusion criteria for exports (by default, any file with the proper extension will be exported)
+  # Provide additional file exclusion criteria for exports
+  # (by default, any file with the proper extension will be exported)
   # c.skip_file_export = ->(file) { file.split[1].to_s.include?('fr') }
 
   # Set the options below if you would like to work with format other than YAML
